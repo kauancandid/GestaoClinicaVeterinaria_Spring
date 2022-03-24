@@ -1,0 +1,3 @@
+# GestaoClinicaVeterinaria_Spring
+
+Uma gestão de um clinica veterinária usando framework em Spring, e banco de dados relacional. Em andamento...
