@@ -5,10 +5,20 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import java.util.List;
 
 @Entity
 @Data
-public class Owner extends Person{
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class Owner extends Person {
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<Pet> pets;
 
 }

@@ -23,6 +23,6 @@ public class Pet {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    private Species species;
+    private Species specie;
 
 }
