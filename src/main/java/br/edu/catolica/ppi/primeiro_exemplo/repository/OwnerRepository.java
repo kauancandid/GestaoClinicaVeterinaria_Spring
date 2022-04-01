@@ -17,8 +17,10 @@ public interface OwnerRepository extends JpaRepository<Owner, UUID> {
 //    tenha uma parte do nome dito, exemplo an
 //    todo nome que tiver an ele retorna
 
-    @Query("select r.name from Owner r where r.name like %:name%")
+    @Query("select r.name from Person r where r.name like %:name%")
     Owner findByName(String name);
+
+
 
 
 }

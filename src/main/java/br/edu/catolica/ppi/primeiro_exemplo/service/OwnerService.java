@@ -28,10 +28,6 @@ public class OwnerService {
         Optional<Owner> ownerOptional = ownerRepository.findById(id);
         return ownerOptional
                 .orElseThrow(() -> new RuntimeException("Responsavel não localizado"));
-
-
-
-
 //        if(ownerOptional.isPresent()){
 //            return ownerOptional.get();
 //        }
